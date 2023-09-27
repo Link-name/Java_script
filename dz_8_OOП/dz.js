@@ -18,12 +18,10 @@ manager.displayInfo(); // "Name: John Doe, Department: Sales" */
 class Employee {
     constructor(name) {
         this.name = name;
-
     }
     displayInfo() {
         console.log(`Сотрудник ${this.name}`);
     }
-
 }
 class Manager extends Employee {
     constructor(name, desplayInfo) {
@@ -32,12 +30,10 @@ class Manager extends Employee {
     }
     displayInfo() {
         console.log(`${this.name} ${this.desplayInfo}`);
-
     }
 }
 const employee = new Employee("John Smith")
 employee.displayInfo();
-
 const manager = new Manager("jane Don", "Sales")
 manager.displayInfo();
 
@@ -91,7 +87,6 @@ class Order {
         }
         return summ;
     }
-
 }
 const order = new Order(12345);
 console.log(order);
